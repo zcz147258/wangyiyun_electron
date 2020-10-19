@@ -1,0 +1,19 @@
+@globalcolor: #C62F2F;
+@headerscolor: #e4e4e7;
+@hovercolor: #FFFFFF;
+
+.eclipse(@height, @width) {
+    width: @height;
+    height: @width;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.eclipsemore(@width,@amount) {
+    width: @width;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @amount;
+    overflow: hidden;
+}
